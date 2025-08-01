@@ -6,9 +6,9 @@ This repository contains all the data, scripts, programs, and step-by-step instr
 
 ## **Programs and Tools**
 
-**If you are working on an HPC system from your institution, the programs you need are likely already installed. In my case, I used the **[UPPMAX](https://www.uu.se/en/centre/uppmax) from Uppsala University, [Dardel HPC system](https://www.pdc.kth.se/hpc-services/computing-systems/dardel-hpc-system) from KTH and [COSMOS](https://www.lunarc.lu.se/systems/cosmos/) from Lund University — it’s always better to have access to more computing and storage resources, especially if you're trying to save your PhD (like I was!).
+If you are working on an HPC system from your institution, the programs you need are likely already installed. In my case, I used the [UPPMAX](https://www.uu.se/en/centre/uppmax) from Uppsala University, [Dardel HPC system](https://www.pdc.kth.se/hpc-services/computing-systems/dardel-hpc-system) from KTH and [COSMOS](https://www.lunarc.lu.se/systems/cosmos/) from Lund University — it’s always better to have access to more computing and storage resources, especially if you're trying to save your PhD (like I was!).
 
-**Personally, I prefer to install software using **[conda](https://anaconda.org/anaconda/conda), [mamba](https://mamba.readthedocs.io/en/latest/installation/mamba-installation.html), or [Singularity](https://docs.sylabs.io/guides/3.0/user-guide/installation.html). Many people rely on their HPC support teams to install software, which can sometimes take a while. So, if you have the skills (or the curiosity) to do it yourself and save time, go for it! Of course, if your HPC support team is fast and efficient, that's also a great option.
+Personally, **I prefer to install software using** [conda](https://anaconda.org/anaconda/conda), [mamba](https://mamba.readthedocs.io/en/latest/installation/mamba-installation.html), or [Singularity](https://docs.sylabs.io/guides/3.0/user-guide/installation.html). Many people rely on their HPC support teams to install software, which can sometimes take a while. So, if you have the skills (or the curiosity) to do it yourself and save time, go for it! Of course, if your HPC support team is fast and efficient, that's also a great option.
 
 `QUAST (v5.3.0)`
 
@@ -96,7 +96,7 @@ tick_genomics/
 
 ### QUAST
 
-**I used **[QUAST](https://quast.sourceforge.net/docs/manual.html)  via conda. **QUAST** stands for **Quality ASsessment Tool**, and it's used to evaluate the quality of genome assemblies.
+I used [QUAST](https://quast.sourceforge.net/docs/manual.html)  via conda. **QUAST** stands for **Quality ASsessment Tool**, and it's used to evaluate the quality of genome assemblies.
 
 **In simple terms, QUAST helps you ****check how good your genome assemblies are** by calculating useful metrics such as:
 
