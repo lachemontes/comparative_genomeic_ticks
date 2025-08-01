@@ -387,8 +387,6 @@ busco --plot busco_results
 
 ```
 
-The version `busco (6.0.0) ` creates plot pages to avoid an excess of results cluttering the plot. Then ypu should consider to present the data in a table or create your own R or python script to plot the resuls.
+The version `busco (6.0.0) ` creates plot pages to avoid an excess of results cluttering the plot (old busco version plot all data in a single figure and provide an R script to modify as you want it). Then, for the version 6.0, you should consider to present the data in a table or create your own R or python script to plot the resuls. Here is an example of how the figure looks like:
 
-```text
-
-```
+![1754056265819](image/tutorial/1754056265819.png)
