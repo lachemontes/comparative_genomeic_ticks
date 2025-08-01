@@ -22,6 +22,8 @@ Personally, **I prefer to install software using** [conda](https://anaconda.org/
 
 ## **Directory Structure**
 
+Just and example ...
+
 ```
 tick_genomics/
 ├── data/
