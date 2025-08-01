@@ -262,3 +262,23 @@ busco -i "$FASTA" \
       -m genome \
       -c 8 \
 ```
+
+### **📊 How to Plot BUSCO Results from Multiple Genomes?**
+
+After running BUSCO, each output folder (e.g., **A_maculatum/**) will contain a file like:
+
+```short_summary.specific.arthropoda_odb10.[your_species_name].txt
+
+short_summary.specific.arthropoda_odb10.[your_species_name].txt
+```
+
+Then, create a new folder `busco_results `and copy all the `short_summary....txt` files to the new folder.
+
+```bash
+# create a new folder 
+mkdir busco_results
+
+# move or copy the files to the results folder
+
+
+```
