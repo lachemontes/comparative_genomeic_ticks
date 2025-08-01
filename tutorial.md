@@ -63,13 +63,13 @@ tick_genomics/
 
 ## Data Collection
 
-**For this analysis, I used both ****genomic** and **transcriptomic** data from multiple public repositories, mainly [GenBank](https://www.ncbi.nlm.nih.gov/genbank/) and [RefSeq](https://www.ncbi.nlm.nih.gov/refseq/). Additionally, I generated new **RNA-seq data** as part of this study to complement the available resources and ensure better coverage for *Ixodes ricinus*, the focal species.
+For this analysis, I used both **genomic** and **transcriptomic** data from multiple public repositories, mainly [GenBank](https://www.ncbi.nlm.nih.gov/genbank/) and [RefSeq](https://www.ncbi.nlm.nih.gov/refseq/). Additionally, I generated new **RNA-seq data** as part of this study to complement the available resources and ensure better coverage for *Ixodes ricinus*, the focal species.
 
-**Below you’ll find a table with details of the genomes used, including the assembly level, accession number, and how to download each dataset using the **`datasets` command-line tool from NCBI (if available). This made it easier to keep things organized and reproducible. **I really recommend using this tool to avoid manual errors or inconsistencies.**
+Below you’ll find a table with details of the genomes used, including the assembly level, accession number, and how to download each dataset using the `datasets` command-line tool from NCBI (if available). This made it easier to keep things organized and reproducible. **I really recommend using this tool to avoid manual errors or inconsistencies.**
 
-**In the case of ***I. ricinus*, I used a curated assembly available through the BIPAA platform because it wasn’t available on NCBI with a formal accession. The download link (use wget) is included in the table as well.
+In the case of ***I. ricinus*, I used a curated assembly available through the BIPAA platform because it wasn’t available on NCBI with a formal accession. The download link (use wget) is included in the table as well.
 
-> **💡 ***Tip:* I always keep a note of the day I collected each dataset, it helps to keep track in case versions change later or for reproducibility when writing the methods section.
+> 💡 *Tip:* I always keep a note of the day I collected each dataset, it helps to keep track in case versions change later or for reproducibility when writing the methods section.
 
 ### Genomic data
 
@@ -106,13 +106,13 @@ I used [QUAST](https://quast.sourceforge.net/docs/manual.html)  via conda. **QUA
 * **GC content**
 * **Genome completeness (when a reference is provided)**
 
-**It also generates helpful ****interactive visualizations** through a tool called **Icarus**, which makes it easier to explore and compare multiple assemblies.
+It also generates helpful **interactive visualizations** through a tool called **Icarus**, which makes it easier to explore and compare multiple assemblies.
 
-**For this project, I used ****QUAST v5.3.0** to assess the genome assemblies of all tick species included in the study. This helped me identify differences in assembly quality, which is especially important before running any downstream analyses like gene prediction or orthology detection.
+For this project, I used ****QUAST v5.3.0** to assess the genome assemblies of all tick species included in the study. This helped me identify differences in assembly quality, which is especially important before running any downstream analyses like gene prediction or orthology detection.
 
-> **💡 ***Tip:* If you're dealing with fragmented or draft assemblies (as is often the case with non-model species), QUAST is a must-have to quickly spot assembly issues or gaps.
+> 💡 *Tip:* If you're dealing with fragmented or draft assemblies (as is often the case with non-model species), QUAST is a must-have to quickly spot assembly issues or gaps.
 
-**You can install QUAST via **[Conda](https://anaconda.org/bioconda/quast) or check their latest releases and documentation on their [official website](http://quast.sf.net/).
+You can install QUAST via [Conda](https://anaconda.org/bioconda/quast) or check their latest releases and documentation on their [official website](http://quast.sf.net/).
 
 ```
 #!/bin/bash
@@ -191,7 +191,7 @@ echo "Check 'report.html' and 'transposed_report.tsv' for figures and comparativ
 
 ### 🔍 What Does BUSCO Actually Do?
 
-**BUSCO scans your genome (or transcriptome/protein set) for universal single-copy orthologs genes that should ****almost always be present and single-copy** in your species group.
+BUSCO scans your genome (or transcriptome/protein set) for universal single-copy orthologs genes that should **almost always be present and single-copy** in your species group.
 
 **It gives you results like:**
 
@@ -200,9 +200,9 @@ echo "Check 'report.html' and 'transposed_report.tsv' for figures and comparativ
 * **Fragmented**: Found only partially
 * **Missing**: Not found at all
 
-**For this tick genomics project, I used BUSCO with the **`arthropoda_odb10` dataset (insects, ticks, crustaceans, etc.) to check the quality of genome assemblies across all 14 tick species. This is super helpful before doing any gene prediction or downstream analysis — you want to be sure your genome isn't missing large chunks!
+For this tick genomics project, I used BUSCO with the `arthropoda_odb10` dataset (insects, ticks, crustaceans, etc.) to check the quality of genome assemblies across all 14 tick species. This is super helpful before doing any gene prediction or downstream analysis — you want to be sure your genome isn't missing large chunks!
 
-> **💡 ***Tip:* A BUSCO completeness score above ~90% usually means you’re working with a pretty solid genome.
+> 💡 *Tip:* A BUSCO completeness score above ~90% usually means you’re working with a pretty solid genome.
 
 **You can run BUSCO easily on the command line with:**
 
