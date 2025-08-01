@@ -336,3 +336,10 @@ done
 
 echo "Renaming process finished."
 ```
+
+
+Now, I the idea is to copy all the summary reports in the folder `summary_results`
+
+```bash
+
+```
