@@ -4,7 +4,7 @@ This repository contains all scripts, data, and documentation for a comparative 
 
 The tutorial-style structure is designed to be fully reproducible and beginner-friendly, with step-by-step explanations for each analysis.
 Focus species: Ixodes ricinus
-Tools: QUAST, BUSCO, OrthoFinder, InterProScan, Conda, Singularity ...
+Tools: QUAST, BUSCO, OrthoFinder, InterProScan, Conda, Singularity ... <br>
 Bonus: Includes custom scripts for high-performance computing (SLURM-compatible)
 
 Whether you’re a student in crisis or not, a tick researcher, or just exploring genome analysis — welcome!
