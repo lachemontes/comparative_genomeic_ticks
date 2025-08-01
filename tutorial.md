@@ -275,8 +275,13 @@ short_summary.specific.arthropoda_odb10.[your_species_name].txt
 Then, create a new folder `busco_results `and copy all the `short_summary....txt` files to the new folder.
 
 ```bash
+
 # create a new folder 
 mkdir busco_results
+
+# rename the short_summary files with the base folder to make life easier
+
+
 
 # move or copy the files to the results folder
 
