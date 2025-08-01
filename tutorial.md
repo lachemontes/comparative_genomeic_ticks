@@ -187,9 +187,10 @@ echo "Check 'report.html' and 'transposed_report.tsv' for figures and comparativ
 
 **Think of BUSCO as a way to answer:**
 
-> **"How complete is my genome?"**
+> **"How complete is my genome?"**What does BUSCO actually do?
+>
 
-### 🔍 What does BUSCO actually do?
+**What does BUSCO actually do?**
 
 BUSCO scans your genome (or transcriptome/protein set) for universal single-copy orthologs genes that should **almost always be present and single-copy** in your species group.
 
