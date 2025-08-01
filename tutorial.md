@@ -280,7 +280,7 @@ Then, create a new folder `busco_results `and copy all the `short_summary....txt
 mkdir busco_results
 ```
 
-Then, what I did was to rename all the `short_bla_bla.txt`  files to make them easily to handle before moving or copy (better, just in case you make a mistake) to the `busco_results` folder. I used the following script:
+Then, what I did was to rename all the `short_bla_bla.txt`  files to make them easily to handle before moving or copy (better, just in case you make a mistake) to the `busco_results` folder. I used the following script (to copy the json just reeplace the extension from txt to json):
 
 ```bash
 #!/bin/bash
@@ -337,7 +337,7 @@ done
 echo "Renaming process finished."
 ```
 
-Now, I the idea is to copy all the summary reports in the folder `summary_results`
+Now, I the idea is to copy all the summary reports (JSON and txt) in the folder `summary_results`
 
 ```bash
 #!/bin/bash
@@ -378,4 +378,17 @@ done
 
 echo ""
 echo "Copy process finished. All files are in '$OUTPUT_DIR'."
+```
+
+To generate a plot of your BUSCO results, run
+
+```bash
+busco --plot busco_results
+
+```
+
+The version `busco (6.0.0) ` creates plot pages to avoid an excess of results cluttering the plot. Then ypu should consider to present the data in a table or create your own R or python script to plot the resuls.
+
+```text
+
 ```
